@@ -30,4 +30,10 @@ export class Order {
   get userId() {
     return this.#userId;
   }
+
+  get orderObj() {
+    return { id: this.#id, productId: this.#productId, quantity: this.#quantity, userId: this.#userId, };
+  }
+
+
 }
